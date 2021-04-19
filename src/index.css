@@ -11,3 +11,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* .Logo {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./Assets/Pizza.jpg);
+  height: 50vh;
+  width: 100vw;
+  color: #FFFFFF;
+  font-size: 1.5em;
+  font-family: lato, sans-serif;
+  
+} */
+
+.Pizza-body {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  text-align: center
+}
+

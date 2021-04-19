@@ -1,19 +1,18 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
-
- 
 // Primary Div 
-const MainDiv = styled.div`
+export const MainDiv = styled.div`
 display: block;
 flex-flow: column nowrap;
 margin: 0px;
 padding: 0px;
 background: rgb(255,0,0);
 background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,119,0,0.8323704481792717) 100%);
-`;
+`; 
 
 //Navigation Styling
-const NavDiv = styled.div`
+export const NavDiv = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -27,7 +26,7 @@ const NavDiv = styled.div`
     padding: 10px 10px;
     `;
 
-const NavHeader = styled.h1`
+export const NavHeader = styled.h1`
     align-self: center;
     font-family: 'Anton', sans-serif;
     background: rgb(242,7,7);
@@ -38,14 +37,14 @@ const NavHeader = styled.h1`
     box-shadow: 5px 5px 5px rgba(43, 4, 2, .5);
 `;
 
-const NavLinks = styled.div`
+export const NavLinks = styled.div`
     align-self: center;
     display: flex;
     font-weight: bold;
     font-family: Lato, sans-serif;
     `;
 
-const ButtonLinks = styled(Link)`
+export const ButtonLinks = styled(Link)`
     background-color: red;
     color: white;
     text-decoration: none;
@@ -58,7 +57,7 @@ const ButtonLinks = styled(Link)`
 `;
 
 // Hero Styling
-const HeroDiv = styled.div`
+export const HeroDiv = styled.div`
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -66,7 +65,7 @@ const HeroDiv = styled.div`
    
 `;
 
-const HeroText = styled.h2`
+export const HeroText = styled.h2`
     color: white;
     align-self: center;
     
@@ -75,7 +74,7 @@ const HeroText = styled.h2`
 `;
 
 
-const PizzaButton = styled(ButtonLinks)`
+export const PizzaButton = styled(ButtonLinks)`
     align-items: center;
     border-radius: 20%;
     border: none;
@@ -84,7 +83,7 @@ const PizzaButton = styled(ButtonLinks)`
 `;
 
 // First Row of Cards
-const TopCards = styled.div`
+export const TopCards = styled.div`
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -95,7 +94,7 @@ const TopCards = styled.div`
     
 `;
 
-const CardBox = styled.div`
+export const CardBox = styled.div`
     width: 25vw;
     height: 20vh;
     background: red;
@@ -103,7 +102,7 @@ const CardBox = styled.div`
     padding: 10px;
 `;
 
-const CardText = styled.h2`
+export const CardText = styled.h2`
 justify-content: center;
 color: #333333;
 background: #FFFFFF;
@@ -114,7 +113,7 @@ text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
 
 
 // Second Row of Cards
-const BottomCards = styled.div`
+export const BottomCards = styled.div`
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -126,9 +125,10 @@ const BottomCards = styled.div`
 `;
 
 //Footer
-const Footer = styled.p`
+export const Footer = styled.p`
     display: flex;
     justify-content: center;
 `;
+ 
 
-export { Footer, BottomCards, CardText, CardBox, TopCards, PizzaButton, HeroText, HeroDiv}
+ 
